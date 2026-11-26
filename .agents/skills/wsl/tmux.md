@@ -29,3 +29,9 @@ If tmux hangs or refuses connections:
 tmux ls
 tmux kill-server   # Warning: closes all active sessions
 ```
+
+### 5. Reporting Config Issues
+When an issue is found in the `tmux` config repository, create a GitHub issue ticket (`gh issue create`) in that repo containing:
+- **Issue**: Exact error message, affected keybinding/script, and reproduction steps
+- **Resolution**: The config change or fix that resolves it
+- **Bypass / Workaround**: Temporary bypass (e.g., running the command outside tmux or using a fallback keybinding)

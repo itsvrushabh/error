@@ -22,3 +22,9 @@
 If `+` / `*` registers fail in WSL:
 - Install `win32yank.exe` (or use `wl-clipboard` / `xclip` if WSLg is active) and ensure it is on `PATH`.
 - Verify with `:checkhealth` under **Clipboard**.
+
+### 4. Reporting Config Issues
+When an issue is found in the `nvim` config repository, create a GitHub issue ticket (`gh issue create`) in that repo containing:
+- **Issue**: Exact error/`:messages` output, `:checkhealth` findings, and reproduction steps
+- **Resolution**: The config/plugin/LSP fix that resolves it
+- **Bypass / Workaround**: Temporary bypass (e.g., `nvim --clean`, disabling the offending plugin, or `:LspStop`)
